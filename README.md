@@ -71,14 +71,6 @@ logging:
 
 #### 4. Run
 
-Using the start script:
-
-```bash
-./start.sh
-```
-
-Or run the binary directly:
-
 ```bash
 ./sniproxy -config config.yaml
 ```
@@ -161,7 +153,6 @@ sniproxy/
 ├── main.go              # Entry point
 ├── config.yaml          # Config file
 ├── domains.csv          # Whitelist rules
-├── start.sh             # Start script
 ├── internal/
 │   ├── config/          # Config loading
 │   ├── proxy/           # Proxy core (server / https / http)
@@ -240,14 +231,6 @@ logging:
 ```
 
 #### 4. 启动服务器
-
-使用启动脚本：
-
-```bash
-./start.sh
-```
-
-或直接运行：
 
 ```bash
 ./sniproxy -config config.yaml
@@ -339,7 +322,6 @@ sniproxy/
 ├── main.go                 # 主程序入口
 ├── config.yaml            # 配置文件
 ├── domains.csv            # 域名白名单文件
-├── start.sh               # 启动脚本
 ├── internal/
 │   ├── config/            # 配置管理
 │   ├── proxy/             # 代理核心逻辑

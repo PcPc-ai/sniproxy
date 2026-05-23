@@ -39,7 +39,7 @@ jobs:
         run: |
           PKG="sniproxy-${{ github.ref_name }}-${{ matrix.goos }}-${{ matrix.goarch }}"
           mkdir -p "$PKG"
-          cp sniproxy config.yaml domains.csv start.sh README.md "$PKG/"
+          cp sniproxy config.yaml domains.csv README.md "$PKG/"
           tar -czf "${PKG}.tar.gz" "$PKG"
           sha256sum "${PKG}.tar.gz" > "${PKG}.tar.gz.sha256"
 
