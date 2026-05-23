@@ -1,0 +1,25 @@
+# SNI代理服务器配置文件
+
+server:
+  # HTTPS监听端口
+  https_port: "443"
+  # HTTP监听端口
+  http_port: "80"
+  # 绑定地址
+  bind_addr: "0.0.0.0"
+
+# 白名单配置
+whitelist:
+  # 是否启用白名单
+  enabled: true
+  # 默认模式: allow(允许) 或 deny(拒绝)
+  default_mode: "deny"
+  # 白名单域名文件路径
+  domains_file: "domains.csv"
+
+# 日志配置
+logging:
+  # 日志级别: debug, info, warn, error
+  level: "info"
+  # 日志格式: text 或 json
+  format: "text"
